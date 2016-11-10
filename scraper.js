@@ -15,13 +15,13 @@
 
 const scraper = require('website-scraper');
 const fs = require("fs-extra");
+const path = require("path");
 const argv = require("yargs")
   .usage("Usage: $0 <url> <output>")
   .command("url", "url to download")
   .command("output", "directory to save to (inside ./tmp)")
   .help()
   .argv;
-const path = require("path");
 
 // Get the settings
 const url = argv._[0];
