@@ -25,12 +25,12 @@ const argv = require("yargs")
 
 // Get the settings
 const url = argv._[0];
-const out = path.join(__dirname, `tmp/${argv._[1]}`);
+const out = path.join(__dirname, `../tmp/${argv._[1]}`);
 
 // Clear a target dir
 fs.removeSync(out)
 
-const program = phantomjs.exec(path.join(__dirname, 'phantomjs/browser_script.js'), url, out)
+const program = phantomjs.exec(path.join(__dirname, '../lib/phantomjs/browser_script.js'), url, out)
 program.stdout.pipe(process.stdout)
 program.stderr.pipe(process.stderr)
 program.on('exit', code => {

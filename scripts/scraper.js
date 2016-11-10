@@ -24,7 +24,7 @@ const argv = require("yargs")
 // Get the settings
 const url = argv._[0];
 const out = path.resolve(__dirname, `../tmp/${argv._[1]}`);
-const scraper = require("../scraper");
+const scraper = require("../lib/scraper");
 
 scraper(url, out);
 process.exit();
