@@ -2,13 +2,16 @@
   "name": "web-downloader",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
     "fs-extra": "^1.0.0",
     "phantomjs-prebuilt": "^2.1.13",
     "website-scraper": "^1.2.0",
