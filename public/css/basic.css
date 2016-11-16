@@ -1,0 +1,74 @@
+/*
+  Pearlshare pearl tile styling
+
+  Usage:
+
+  <div class="ps-pearl">
+    <div class="text">
+      <a href="https://app.pearlshare.com/pearls/709360-safdarjungs-tomb----" target="_blank">
+        Safdarjungs Tomb - Take me There
+      </a>
+    </div>
+    <div class="image" style="background-image: url(https://irs0.4sqi.net/img/general/250x250/37500040_-O_njd5raOnS37BJ96TglqqomNP2iV3hq44C1nLV19Y.jpg)"></div>
+  </div>
+*/
+
+.ps-pearl {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid #ccc;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.ps-pearl .text {
+  flex: 1;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ps-pearl .image {
+  background-size: cover;
+  flex: 0 10em;
+  height: 10em;
+  border-left: 1px solid #ccc;
+}
+
+/*
+  Pearlshare guide tile styling
+
+  <div class="ps-guide">
+    <div class="image" style="background-image: url(https://res.cloudinary.com/pearlshare/image/upload/w_640,h_640,c_fit/v1478789685/ow3blmy8bqbfnee48a7y.jpg)"></div>
+    <a class="text" href="https://app.pearlshare.com/collections/5246-delhi-city-guide" target="_blank">
+      Use our on-the-go guide to Delhi
+    </a>
+  </div>
+*/
+.ps-guide {
+  height: 10em;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.ps-guide a:hover {
+  color: white !important;
+}
+.ps-guide .image {
+  filter: brightness(40%);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.ps-guide .image:hover {
+  filter: brightness(90%);
+}
+.ps-guide .text {
+  color: white;
+  padding: 1em;
+  font-size: 2em;
+  display: block;
+  z-index: 1;
+}
