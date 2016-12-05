@@ -13,7 +13,7 @@
       $: node phantom.js --help
  */
 
-const phantomjs = require('phantomjs-prebuilt')
+const phantomjs = require("phantomjs-prebuilt");
 const fs = require("fs-extra");
 const path = require("path");
 const argv = require("yargs")
@@ -28,12 +28,12 @@ const url = argv._[0];
 const out = path.join(__dirname, `../tmp/${argv._[1]}`);
 
 // Clear a target dir
-fs.removeSync(out)
+fs.removeSync(out);
 
-const program = phantomjs.exec(path.join(__dirname, '../lib/phantomjs/browser_script.js'), url, out)
-program.stdout.pipe(process.stdout)
-program.stderr.pipe(process.stderr)
-program.on('exit', code => {
+const program = phantomjs.exec(path.join(__dirname, "../lib/phantomjs/browser_script.js"), url, out);
+program.stdout.pipe(process.stdout);
+program.stderr.pipe(process.stderr);
+program.on("exit", function (code) {
   // do something on end
-  console.log("exiting...")
-})
+  console.log("exiting...", code);
+});

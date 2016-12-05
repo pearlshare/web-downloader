@@ -23,7 +23,7 @@
     "html": "^1.0.0",
     "phantomjs-prebuilt": "^2.1.13",
     "s3": "^4.4.0",
-    "website-scraper": "^1.2.0",
+    "website-scraper": "git+https://github.com/pearlshare/node-website-scraper.git",
     "yargs": "^6.3.0"
   },
   "devDependencies": {
