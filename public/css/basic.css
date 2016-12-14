@@ -47,8 +47,8 @@
 .ps-guide {
   min-height: 10em;
   display: flex;
-  align-items: flex-end;
   position: relative;
+  flex-direction: column;
 }
 .ps-guide a:hover {
   color: white !important;
@@ -69,7 +69,8 @@
   color: white !important;
   padding: 1em;
   font-size: 2em;
-  display: block;
+  display: flex;
+  align-items: flex-end;
   z-index: 1;
   flex: 1;
   text-decoration: none;

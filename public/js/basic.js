@@ -1,5 +1,5 @@
 function bootUp () {
-  var internalLinks = document.querySelectorAll('a[href*="/"]');
+  var internalLinks = document.querySelectorAll('a[href]:not([href^="http"]):not([href^="#"])');
 
   internalLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
