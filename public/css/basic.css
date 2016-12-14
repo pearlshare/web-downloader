@@ -45,7 +45,7 @@
   </div>
 */
 .ps-guide {
-  height: 10em;
+  min-height: 10em;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -62,13 +62,15 @@
   left: 0;
   right: 0;
 }
-.ps-guide .image:hover {
+.ps-guide:hover .image {
   filter: brightness(90%);
 }
 .ps-guide .text {
-  color: white;
+  color: white !important;
   padding: 1em;
   font-size: 2em;
   display: block;
   z-index: 1;
+  flex: 1;
+  text-decoration: none;
 }
