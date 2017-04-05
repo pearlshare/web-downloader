@@ -1,7 +1,8 @@
 {
   "name": "web-downloader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clone websites and store in S3",
+  "repository": "https://github.com/pearlshare/web-downloader.git",
   "main": "node index.js",
   "engines": {
     "node": "7.0.x",
@@ -22,9 +23,9 @@
     "express": "^4.14.0",
     "fs-extra-promise": "^0.4.1",
     "html": "^1.0.0",
-    "phantomjs-prebuilt": "^2.1.13",
     "s3": "^4.4.0",
-    "website-scraper": "git+https://github.com/pearlshare/node-website-scraper.git#v2.1.0",
+    "website-scraper": "2.2.2",
+    "website-scraper-phantom": "^0.1.0",
     "yargs": "^6.3.0"
   },
   "devDependencies": {
