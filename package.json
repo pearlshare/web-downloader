@@ -5,8 +5,8 @@
   "repository": "https://github.com/pearlshare/web-downloader.git",
   "main": "node index.js",
   "engines": {
-    "node": "7.0.x",
-    "npm": "3.10.x"
+    "node": "8.1.x",
+    "npm": "5.0.3"
   },
   "scripts": {
     "start": "node index.js",
